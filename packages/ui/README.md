@@ -37,51 +37,6 @@ export default function Dashboard() {
 }
 ```
 
-**Key Props:**
-
-- `variant`: primary | secondary | ghost | outline (default: primary)
-- `size`: sm | md | lg (default: md)
-- `disabled`: boolean (default: false)
-
-## Component Library
-
-| Component | Description                       | Status    |
-| --------- | --------------------------------- | --------- |
-| Button    | Interactive action triggers       | ✅ Stable |
-| Input     | Form input fields with validation | ✅ Stable |
-| DataTable | Sortable/paginated tables         | 🚧 Beta   |
-| Modal     | Accessible dialog system          | ✅ Stable |
-| Card      | Content containers with variants  | ✅ Stable |
-| Accordion | Collapsible content sections      | 🚧 Beta   |
-
-## Configuration
-
-1. Add Tailwind configuration (`tailwind.config.js`):
-
-```js
-module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@cloud-hub/ui/**/*.js",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        primary: "#2563eb", // Example customization
-        secondary: "#4f46e5",
-      },
-    },
-  },
-};
-```
-
-2. Import global CSS in your app:
-
-```tsx
-import "@cloud-hub/ui/dist/styles.css";
-```
-
----
 
 ## License
 
