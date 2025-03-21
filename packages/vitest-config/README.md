@@ -2,7 +2,10 @@
 
 **Centralized Testing Configuration for Cloud Projects**
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue. Unified testing setup across monorepo
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) 
+
+
 
 - ⚡ Vitest optimizations for TypeScript/React
 - 📊 Built-in coverage configuration
