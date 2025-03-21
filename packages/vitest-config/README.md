@@ -1,19 +1,13 @@
-
-````markdown
 # @cloud-hub/vitest-config
 
-**Centralized Testing Configuration for Cloud Projects**  
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+**Centralized Testing Configuration for Cloud Projects**
 
-## Features
+![License: MIT](https://img.shields.io/badge/License-MIT-blue. Unified testing setup across monorepo
 
-- 🧪 Unified testing setup across monorepo
 - ⚡ Vitest optimizations for TypeScript/React
 - 📊 Built-in coverage configuration
 - 🛠️ Pre-configured testing utilities
 - 🔄 Shared global setup/teardown
-
----
 
 ## Installation
 
@@ -24,9 +18,6 @@ npm install --save-dev @cloud-hub/vitest-config vitest
 # Using yarn
 yarn add -D @cloud-hub/vitest-config vitest
 ```
-````
-
----
 
 ## Quick Start
 
@@ -60,8 +51,6 @@ export default defineConfig({
 });
 ```
 
----
-
 ## Configuration Presets
 
 | Preset  | Includes                           | Best For         |
@@ -70,13 +59,11 @@ export default defineConfig({
 | `react` | React Testing Library, JSX support | React components |
 | `edge`  | Web APIs, fetch mocking            | Edge runtime     |
 
----
-
 ## Core Configuration
 
 **Base Vitest Config:**
 
-```typescript
+```javascript
 {
   test: {
     globals: true,
@@ -107,8 +94,6 @@ export default defineConfig({
 }
 ```
 
----
-
 ## Testing Utilities
 
 ### Mock Services
@@ -118,7 +103,6 @@ import { mockCloudService } from "@cloud-hub/vitest-config/mocks";
 
 test("fetch data", async () => {
   mockCloudService("getUsers", [{ id: 1, name: "Test" }]);
-
   // Test implementation
 });
 ```
@@ -133,8 +117,6 @@ test("API response", () => {
 });
 ```
 
----
-
 ## Version Compatibility
 
 | Config Version | Vitest | React | Node |
@@ -142,25 +124,19 @@ test("API response", () => {
 | 1.x            | 0.32+  | 18+   | 16+  |
 | 2.x            | 1.0+   | 18+   | 18+  |
 
----
-
 ## Contributing
 
 1. Clone the monorepo
 2. Modify configs in `/packages/vitest-config`
 3. Validate with test projects:
-
-```bash
-cd test-projects/react-app
-vitest run --config vitest.config.ts
-```
-
+   ```bash
+   cd test-projects/react-app
+   vitest run --config vitest.config.ts
+   ```
 4. Submit PR with:
    - Configuration changes
    - Updated test cases
    - Documentation updates
-
----
 
 ## License
 
@@ -168,24 +144,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-> **Pro Tip:** Use Vitest's UI mode for visual testing:
->
-> ```bash
-> vitest --ui
-> ```
->
-> Combine with `@cloud-hub/mock-server` for full integration testing capabilities.
+**Pro Tip:** Use Vitest's UI mode for visual testing: `vitest --ui`
 
-```
-
-This README includes:
-- Consistent branding with other Cloud Hub packages
-- Clear installation/usage instructions
-- Configuration presets comparison
-- Version compatibility matrix
-- Testing utility examples
-- Contributing guidelines
-- Visual hierarchy matching your established style
-- Badges and emoji usage for quick scanning
-- TypeScript examples for type-safe configuration
-```
+Combine with `@cloud-hub/mock-server` for full integration testing capabilities.
