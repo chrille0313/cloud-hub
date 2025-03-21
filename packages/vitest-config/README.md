@@ -1,6 +1,3 @@
-(Due to technical issues, the search service is temporarily unavailable.)
-
-Here's a professionally styled README for the `@cloud-hub/vitest-config` package following your established pattern:
 
 ````markdown
 # @cloud-hub/vitest-config
