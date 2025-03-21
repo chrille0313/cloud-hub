@@ -57,35 +57,8 @@ function UserManager() {
 }
 ```
 
-**Key Features:**
-
-- 🪝 Auto-generated React Query hooks
-- ♻️ Built-in request/response validation
-- 📡 Type-safe API endpoints
-- ⏳ Loading/error states handled automatically
-
 ---
 
-## Configuration
-
-### orval.config.ts
-
-```typescript
-export default {
-  apiClient: {
-    input: "./openapi-spec.yaml",
-    output: {
-      target: "./src/api-client.ts",
-      client: "react-query",
-      override: {
-        header: (info: InfoObject) => [
-          `Auto-generated API client - ${new Date().toISOString()}`,
-        ],
-      },
-    },
-  },
-};
-```
 
 ### Environment Variables
 
@@ -133,31 +106,6 @@ if (error) {
 
 ---
 
-## Version Compatibility
-
-| Client Version | orval | React Query | OpenAPI |
-| -------------- | ----- | ----------- | ------- |
-| 1.x            | 6.x   | 3.x         | 3.1     |
-| 2.x            | 7.x   | 4.x         | 3.1     |
-
----
-
-## Contributing
-
-1. Update OpenAPI specification in `/openapi-spec`
-2. Regenerate client:
-
-```bash
-yarn generate:client
-```
-
-3. Verify changes with test project
-4. Submit PR with:
-   - OpenAPI spec changes
-   - Generated client updates
-   - Updated documentation
-
----
 
 ## License
 
