@@ -22,37 +22,7 @@ npm install --save-dev @cloud-hub/vitest-config vitest
 yarn add -D @cloud-hub/vitest-config vitest
 ```
 
-## Quick Start
 
-### Basic Configuration (`vitest.config.ts`)
-
-```typescript
-import { defineConfig } from "vitest/config";
-import cloudHubConfig from "@cloud-hub/vitest-config";
-
-export default defineConfig({
-  ...cloudHubConfig,
-  test: {
-    ...cloudHubConfig.test,
-    environment: "node", // Custom override
-  },
-});
-```
-
-### React Component Testing
-
-```typescript
-import { defineConfig } from "vitest/config";
-import reactConfig from "@cloud-hub/vitest-config/react";
-
-export default defineConfig({
-  ...reactConfig,
-  test: {
-    ...reactConfig.test,
-    setupFiles: ["./src/test/setup.ts"], // Additional setup
-  },
-});
-```
 
 ## Configuration Presets
 
@@ -61,29 +31,6 @@ export default defineConfig({
 | `base`  | DOM mocking, coverage, TS paths    | Node.js projects |
 | `react` | React Testing Library, JSX support | React components |
 | `edge`  | Web APIs, fetch mocking            | Edge runtime     |
-
-## Core Configuration
-
-**Base Vitest Config:**
-
-```javascript
-{
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    coverage: {
-      provider: 'v8',
-      include: ['src/**/*.{ts,tsx}'],
-      thresholds: {
-        lines: 80,
-        functions: 80,
-        branches: 80,
-        statements: 80
-      }
-    }
-  }
-}
-```
 
 **Recommended Scripts:**
 
@@ -110,15 +57,6 @@ test("fetch data", async () => {
 });
 ```
 
-### Custom Matchers
-
-```typescript
-import "@cloud-hub/vitest-config/matchers";
-
-test("API response", () => {
-  expect(response).toHaveValidationError("email");
-});
-```
 
 ## Version Compatibility
 
@@ -127,26 +65,7 @@ test("API response", () => {
 | 1.x            | 0.32+  | 18+   | 16+  |
 | 2.x            | 1.0+   | 18+   | 18+  |
 
-## Contributing
-
-1. Clone the monorepo
-2. Modify configs in `/packages/vitest-config`
-3. Validate with test projects:
-   ```bash
-   cd test-projects/react-app
-   vitest run --config vitest.config.ts
-   ```
-4. Submit PR with:
-   - Configuration changes
-   - Updated test cases
-   - Documentation updates
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-**Pro Tip:** Use Vitest's UI mode for visual testing: `vitest --ui`
-
-Combine with `@cloud-hub/mock-server` for full integration testing capabilities.
