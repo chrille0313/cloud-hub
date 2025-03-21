@@ -83,7 +83,8 @@ import "@cloud-hub/ui/dist/styles.css";
 
 ---
 
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-> **Pro Tip:** For optimal development experience, use our [VS Code recommended extensions](.vscode/extensions.json) and workspace settings.
