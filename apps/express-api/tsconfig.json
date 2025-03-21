@@ -6,7 +6,8 @@
     "outDir": "dist",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "jsx": "react"
   },
   "include": ["src", "tests"],
   "exclude": ["node_modules", "dist"]

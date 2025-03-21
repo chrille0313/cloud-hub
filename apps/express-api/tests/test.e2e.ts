@@ -17,9 +17,9 @@ const otherUserWithClouds = {
   email: 'test@user3.com'
 };
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
-// ~     E2E Tests : Clouds     ~ //
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~ //
+// ~     E2E Tests :     ~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~ //
 
 describe('E2E Tests: GET /clouds', async () => {
   const app = startBackendServer();

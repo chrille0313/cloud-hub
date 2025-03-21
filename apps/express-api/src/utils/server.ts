@@ -74,9 +74,7 @@ export async function createServer(
       validateRequests: {
         // removeAdditional: 'all'
       },
-      validateResponses: {
-        // removeAdditional: 'all'  // TODO: Remove additional in production to avoid leaking information
-      },
+      validateResponses: false,
       validateApiSpec: true
     })
   );
