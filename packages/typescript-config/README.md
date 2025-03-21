@@ -53,31 +53,7 @@ yarn add -D @cloud-hub/typescript-config
 
 ---
 
-## Preset Comparison
 
-| Feature            | Base | Next.js | React Library |
-| ------------------ | ---- | ------- | ------------- |
-| JSX Runtime        | ❌   | ✅      | ✅            |
-| DOM Types          | ❌   | ✅      | ✅            |
-| Declaration Maps   | ❌   | ❌      | ✅            |
-| Strict Null Checks | ✅   | ✅      | ✅            |
-| Next.js Types      | ❌   | ✅      | ❌            |
-
----
-
-## Core Configuration Options
-
-**Essential compilerOptions for libraries:**
-
-```json
-{
-  "declaration": true,
-  "declarationMap": true,
-  "emitDeclarationOnly": false,
-  "jsx": "react-jsx",
-  "skipLibCheck": true
-}
-```
 
 **Recommended Includes/Excludes:**
 
@@ -120,15 +96,7 @@ yarn add -D @cloud-hub/typescript-config
 
 ---
 
-## Troubleshooting
 
-**Common Issues:**
-
-- 🔄 `Cannot find module` - Ensure parent project has required dependencies
-- 🛠️ `JSX not allowed` - Extend from react-library/nextjs presets
-- 📦 Missing type declarations - Enable `declaration` in compilerOptions
-
----
 
 ## Version Compatibility
 
@@ -137,19 +105,7 @@ yarn add -D @cloud-hub/typescript-config
 | 1.x.x           | >=4.9.5    | >=13    | >=18   |
 | 2.x.x           | >=5.0.0    | >=14    | >=18.2 |
 
----
 
-## Contributing
-
-We welcome improvements to our TS ecosystem! Follow these steps:
-
-1. Clone the monorepo
-2. Modify configs in `/packages/typescript-config`
-3. Verify with test projects
-4. Submit PR with:
-   - Configuration changes
-   - Updated documentation
-   - Version bump (if needed)
 
 **Validation Command:**
 
@@ -163,6 +119,3 @@ npx tsc --project test-projects/react-library/tsconfig.json
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
-
-> **Pro Tip:** Use `npm explore @cloud-hub/typescript-config` to inspect configuration files directly from your terminal.
